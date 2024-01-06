@@ -7,7 +7,7 @@
 
 
 进阶作业：
-完成浦语·灵笔的图文理解及创作部署（需截图）
+完成浦语·灵笔的图文理解及创作部署（需截图）[完整文章](../milkcat/io.MD)
 ![进阶作业1-2](https://github.com/xiaomile/InternLM-homework/assets/14927720/10d878af-b3b8-42be-bafd-013176891aca)
 
 
