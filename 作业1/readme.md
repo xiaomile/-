@@ -7,11 +7,12 @@
 
 
 进阶作业：
-完成浦语·灵笔的图文理解及创作部署（需截图）[完整文章](../milkcat/io.MD)
+完成浦语·灵笔的图文理解及创作部署（需截图）
+图文创作[完整文章](../milkcat/io.MD)
 ![进阶作业1-2](https://github.com/xiaomile/InternLM-homework/assets/14927720/10d878af-b3b8-42be-bafd-013176891aca)
-
-
-完成 Lagent 工具调用 Demo 创作部署（需截图）
+图文理解（香菱的表情真的是微笑？）
 ![进阶作业1-3](https://github.com/xiaomile/InternLM-homework/assets/14927720/f672a469-0697-4262-8366-128d1cc0fdaa)
 ![进阶作业1-4](https://github.com/xiaomile/InternLM-homework/assets/14927720/146a43d7-19ec-473e-9103-d280808e2907)
 
+完成 Lagent 工具调用 Demo 创作部署（需截图）
+![进阶作业2](https://github.com/xiaomile/InternLM-homework/assets/14927720/962f5223-d5b4-4454-9fd5-c713a092fb66)
