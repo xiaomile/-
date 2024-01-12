@@ -27,4 +27,5 @@
 [医学知识助手应用地址](https://openxlab.org.cn/apps/detail/xiaomile/medKnowledgeAssitant)
 
 知识库资料来源：https://opendatalab.org.cn/Jinru-Ding/Med_data
-![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/b105c6fe-ad1b-47aa-afb3-c0b290654cbc)
+![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/38d72b01-1dce-43af-946f-c345e5233e68)
+
