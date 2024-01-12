@@ -22,3 +22,9 @@
 ![基础作业2-7](https://github.com/xiaomile/InternLM-homework/assets/14927720/6bcdd760-3965-4475-a02c-d6b5bc4ce7dd)
 
 进阶作业：
+选择一个垂直领域，收集该领域的专业资料构建专业知识库，并搭建专业问答助手，并在 OpenXLab 上成功部署（截图，并提供应用地址）
+
+[医学知识助手应用地址](https://openxlab.org.cn/apps/detail/xiaomile/medKnowledgeAssitant)
+
+知识库资料来源：https://opendatalab.org.cn/Jinru-Ding/Med_data
+![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/b105c6fe-ad1b-47aa-afb3-c0b290654cbc)
