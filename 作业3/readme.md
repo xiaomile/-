@@ -1,6 +1,12 @@
 基础作业
 
 构建数据集，使用 XTuner 微调 InternLM-Chat-7B 模型, 让模型学习到它是你的智能小助手，效果如下图所示，本作业训练出来的模型的输出需要将 不要葱姜蒜大佬 替换成 自己名字或昵称！
+
+微调前
+![基础作业4-1](https://github.com/xiaomile/InternLM-homework/assets/14927720/72ab329f-edf0-4259-bbea-1fd329284cb4)
+
+
+微调后
 ![基础作业4-1](https://github.com/xiaomile/InternLM-homework/assets/14927720/6819fd48-1ab7-472a-ac5c-dafdface5680)
 
 进阶作业
