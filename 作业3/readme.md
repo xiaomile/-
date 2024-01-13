@@ -12,4 +12,7 @@
 进阶作业
 
 将训练好的Adapter模型权重上传到 OpenXLab、Hugging Face 或者 ModelScope 任一一平台。
+![进阶作业3-1](https://github.com/xiaomile/InternLM-homework/assets/14927720/d1e3cf28-ca80-41e7-b588-61360107f6f3)
+
+
 将训练好后的模型应用部署到 OpenXLab 平台，参考部署文档请访问：https://aicarrier.feishu.cn/docx/MQH6dygcKolG37x0ekcc4oZhnCe
