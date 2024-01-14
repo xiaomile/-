@@ -24,6 +24,5 @@ https://openxlab.org.cn/models/detail/xiaomile/personal_assistant
 
 [应用：个人专属助手](https://openxlab.org.cn/apps/detail/xiaomile/personal_assistant)
 
-要么在排队，要么就是卡住了，无法发布，日志也是空的
-![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/219c46d2-a415-49b1-82c7-93cd2ed81848)
-![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/5b3ae091-9b8f-49bf-a027-56f918d4f40c)
+![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/7bb77491-5c65-4880-9192-8c201f22f9d9)
+
