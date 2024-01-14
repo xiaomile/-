@@ -20,6 +20,8 @@ https://openxlab.org.cn/models/detail/xiaomile/personal_assistant
 
 将训练好后的模型应用部署到 OpenXLab 平台，参考部署文档请访问：https://aicarrier.feishu.cn/docx/MQH6dygcKolG37x0ekcc4oZhnCe
 
+[训练好的模型](https://openxlab.org.cn/models/detail/xiaomile/personal_assistant2)
+
 [应用：个人专属助手](https://openxlab.org.cn/apps/detail/xiaomile/personal_assistant)
 
 要么在排队，要么就是卡住了，无法发布，日志也是空的
