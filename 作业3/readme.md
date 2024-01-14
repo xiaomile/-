@@ -22,5 +22,5 @@ https://openxlab.org.cn/models/detail/xiaomile/personal_assistant
 
 [应用：个人专属助手](https://openxlab.org.cn/apps/detail/xiaomile/personal_assistant)
 
-一直在排队
+要么在排队，要么就是卡住了，日志也是空的
 ![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/219c46d2-a415-49b1-82c7-93cd2ed81848)
