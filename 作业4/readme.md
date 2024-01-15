@@ -53,6 +53,7 @@ demo演示
 显存占用5828，比4bit量化要少一点
 
 [测试脚本](benchmark.py)
+
 在自己的任务数据集上任取若干条进行Benchmark测试，测试方向包括：
 （1）TurboMind推理+Python代码集成
 （2）在（1）的基础上采用W4A16量化
