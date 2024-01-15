@@ -23,4 +23,4 @@ end = time.time()
 cost = (end - start)
 throughput = round(count / cost)
 
-print(f"{engine} 耗时 {cost:.2f}秒  {throughput} 字/秒")
+print(f"耗时 {cost:.2f}秒  吞吐量 {throughput} 字/秒")
