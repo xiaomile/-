@@ -56,7 +56,33 @@ demo演示
 
 在自己的任务数据集上任取若干条进行Benchmark测试，测试方向包括：
 （1）TurboMind推理+Python代码集成
+```
+python benchmark.py
+```
+![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/a607606a-5e17-44b2-99fd-a9f2df901043)
+
+
 （2）在（1）的基础上采用W4A16量化
+```
+python benchmark.py ./workspace_quant
+```
+![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/3596ad41-acbb-4f17-8ac7-a607df5e3268)
+
 （3）在（1）的基础上开启KV Cache量化
+
+(quant_policy=4,use_context_fmha=0)
+```
+python benchmark.py
+```
+![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/255c177e-ca7e-4625-b52b-70fdca5fa321)
+
 （4）在（2）的基础上开启KV Cache量化
+
+(quant_policy=4,use_context_fmha=0)
+```
+python benchmark.py ./workspace_quant
+```
+![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/73573e94-63a7-4c21-b6c2-9e570266d11a)
+
+
 （5）使用Huggingface推理
