@@ -93,3 +93,5 @@ python benchmark.py /root/share/temp/model_repos/internlm-chat-7b/ hf
 ```
 推理引擎hf 耗时 55.54秒  吞吐量 50 字/秒
 ![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/be08ef99-7446-4b6e-89dc-5027e56f5d9f)
+
+结论，4bit最快，其次是turbomind 的原模型， 原模型的hf最慢。 kv都会比原来基础上慢一些。
