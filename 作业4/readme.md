@@ -40,7 +40,7 @@ demo演示
 
 显存占用 14918MB
 
-开启kv cache量化并推理
+开启kv cache量化并推理(quant_policy=4,use_context_fmha=0)
 ![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/608a855f-5c6e-4ff0-9553-92a3153b26b0)
 显存占用 14790MB，比量化前少了一点
 
@@ -48,7 +48,7 @@ demo演示
 ![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/20df6fe9-8a0f-4a39-a4fc-08d1cce0a3f6)
 显存占用5952MB，比量化前大幅下降
 
-模型本身量化4bit+kv cache量化后推理
+模型本身量化4bit+kv cache量化后推理(quant_policy=4,use_context_fmha=0)
 ![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/8a6ca8f0-82fc-4b0e-8213-ce56c1f6b5b4)
 显存占用5828，比4bit量化要少一点
 
