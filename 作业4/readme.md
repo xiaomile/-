@@ -59,14 +59,15 @@ demo演示
 ```
 python benchmark.py
 ```
-![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/a607606a-5e17-44b2-99fd-a9f2df901043)
-
+推理引擎turbomind 耗时 11.49秒  吞吐量 131 字/秒
+![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/e3a94f2a-9b25-4186-8e1c-866e04f1b976)
 
 （2）在（1）的基础上采用W4A16量化
 ```
 python benchmark.py ./workspace_quant
 ```
-![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/3596ad41-acbb-4f17-8ac7-a607df5e3268)
+推理引擎turbomind 耗时 7.62秒  吞吐量 236 字/秒
+![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/a92a1a42-9f8b-4402-9d2e-974d0c630649)
 
 （3）在（1）的基础上开启KV Cache量化
 
@@ -74,7 +75,8 @@ python benchmark.py ./workspace_quant
 ```
 python benchmark.py
 ```
-![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/255c177e-ca7e-4625-b52b-70fdca5fa321)
+推理引擎turbomind 耗时 11.83秒  吞吐量 127 字/秒
+![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/74281b71-4422-4985-87a1-71c1ed9005ed)
 
 （4）在（2）的基础上开启KV Cache量化
 
@@ -82,7 +84,12 @@ python benchmark.py
 ```
 python benchmark.py ./workspace_quant
 ```
-![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/73573e94-63a7-4c21-b6c2-9e570266d11a)
-
+推理引擎turbomind 耗时 7.78秒  吞吐量 231 字/秒
+![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/9c473213-30e2-4304-963c-8a21640eb87a)
 
 （5）使用Huggingface推理
+```
+python benchmark.py /root/share/temp/model_repos/internlm-chat-7b/ hf
+```
+推理引擎hf 耗时 55.54秒  吞吐量 50 字/秒
+![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/be08ef99-7446-4b6e-89dc-5027e56f5d9f)
