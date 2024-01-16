@@ -55,6 +55,9 @@ demo演示
   可以看到显存占用只有5856MB，大幅低于原模型
   
   [模型上到传到openxlab](https://openxlab.org.cn/models/detail/xiaomile/personal_assistant_4bit)
+  [openxlab应用地址](https://openxlab.org.cn/apps/detail/xiaomile/personal_assistant_4bit)
+  
+  ![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/c67c8f64-ae99-4522-8eb4-6ded3c0ef1c4)
 
 
 
