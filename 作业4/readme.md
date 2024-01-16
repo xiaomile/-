@@ -50,7 +50,7 @@ demo演示
 
 模型本身量化4bit+kv cache量化后推理(quant_policy=4,use_context_fmha=0)
 ![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/8a6ca8f0-82fc-4b0e-8213-ce56c1f6b5b4)
-显存占用5828，比4bit量化要少一点
+显存占用5828MB，比4bit量化要少一点
 
 [测试脚本](benchmark.py)
 
