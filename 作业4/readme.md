@@ -53,6 +53,9 @@ lmdeploy convert  internlm-chat-7b ./quant_output_hfmerge \
 ![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/5449bf11-c46e-4142-9938-3c92368c100c)
 可以看到显存占用只有5856MB，大幅低于原模型
 
+[模型上到传到openxlab](https://openxlab.org.cn/models/detail/xiaomile/personal_assistant_4bit)
+
+
 
 对internlm-chat-7b模型进行量化，并同时使用KV Cache量化，使用量化后的模型完成API服务的部署，分别对比模型量化前后和 KV Cache 量化前后的显存大小（将 bs设置为 1 和 max len 设置为512）。
 
