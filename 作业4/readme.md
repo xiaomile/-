@@ -58,8 +58,9 @@ demo演示
   
   [openxlab应用地址](https://openxlab.org.cn/apps/detail/xiaomile/personal_assistant_4bit)
   
-  排队中。。。
-  ![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/c67c8f64-ae99-4522-8eb4-6ded3c0ef1c4)
+  应用发布不了，一直排队中。。。
+  ![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/ed49e157-ad5b-483b-8d4b-b0af7145a7da)
+
 
 
 
