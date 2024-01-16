@@ -33,18 +33,18 @@ lmdeploy lite calibrate \
   --calib_dataset "c4" \
   --calib_samples 128 \
   --calib_seqlen 2048 \
-  --work_dir ./quant_output_hf_merge
+  --work_dir ./quant_output_hfmerge
 # 第二步量化权重模型
 lmdeploy lite auto_awq \
   --model  /root/personal_assistant/config/work_dirs/hf_merge/ \
   --w_bits 4 \
   --w_group_size 128 \
-  --work_dir ./quant_output_hf_merge
+  --work_dir ./quant_output_hfmerge
 # 第三步 转换模型的layout，转换成 TurboMind 格式
-lmdeploy convert  internlm-chat-7b ./quant_output_hf_merge \
+lmdeploy convert  internlm-chat-7b ./quant_output_hfmerge \
     --model-format awq \
     --group-size 128 \
-    --dst_path ./workspace_hf_merge
+    --dst_path ./workspace_hfmerge
 ```
 
 对internlm-chat-7b模型进行量化，并同时使用KV Cache量化，使用量化后的模型完成API服务的部署，分别对比模型量化前后和 KV Cache 量化前后的显存大小（将 bs设置为 1 和 max len 设置为512）。
