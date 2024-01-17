@@ -57,9 +57,8 @@ demo演示
   [模型上到传到openxlab](https://openxlab.org.cn/models/detail/xiaomile/personal_assistant_4bit)
   
   [openxlab应用地址](https://openxlab.org.cn/apps/detail/xiaomile/personal_assistant2_4bit)
-  
-  应用发布不了，一直排队中。。。
-  ![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/6369302d-ecbc-4a96-bb80-281e79f26fd2)
+  ![1705455874658](https://github.com/xiaomile/InternLM-homework/assets/14927720/23dcc29b-69a4-4057-b49d-e5a8ae6ef721)
+
 
 
 
