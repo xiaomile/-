@@ -18,6 +18,9 @@ snapshot_download(repo_id="internlm/internlm2-chat-7b", local_dir="./model/inter
 ```
 ![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/fb988667-d6ee-4df1-9606-b2884de105ed)
 
+数据集和opencompass的安装按照教程上来做即可
+
+
 
 进阶作业
 
