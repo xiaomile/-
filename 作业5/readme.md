@@ -103,15 +103,16 @@ pip install lmdeploy==0.2.0
 
 转化模型为turbomind格式
 ```
-lmdeploy convert internlm2-chat-7b ./model/internlm2-chat-7b --dst-path ./model/internlm2-chat-7b-turbomind
+cd /root/code/opencompass/model
+lmdeploy convert internlm2-chat-7b ./model/internlm2-chat-7b
 ```
 
 编写评测demo
-在configs目录下新建eval_internlm2-chat-7b-turbomind.py
+在configs目录下新建eval_internlm2_chat_turbomind_api.py,可参考eval_internlm_chat_turbomind_api.py
 ```python
-### eval_internlm2-chat-7b-turbomind.py
+### eval_internlm2_chat_turbomind_api.py
 from mmengine.config import read_base
-from opencompass.models.turbomind import TurboMindModel
+from opencompass.models.turbomind_api import TurboMindAPIModel
 
 with read_base():
     # choose a list of datasets
@@ -119,7 +120,7 @@ with read_base():
     # and output the results in a choosen format
     from .summarizers.medium import summarizer
 
-datasets = [*ceval_datasets]
+datasets = sum((v for k, v in locals().items() if k.endswith('_datasets')), [])
 
 
 meta_template = dict(
@@ -131,15 +132,30 @@ meta_template = dict(
 
 models = [
     dict(
-        type=TurboMindModel,
+        type=TurboMindAPIModel,
         abbr='internlm2-chat-7b-turbomind',
-        path="./model/internlm2-chat-7b-turbomind",
+        path="./model/workspace",
+        api_addr='http://0.0.0.0:23333',
         max_out_len=100,
         max_seq_len=2048,
-        batch_size=16,
+        batch_size=8,
         meta_template=meta_template,
         run_cfg=dict(num_gpus=1, num_procs=1),
     )
 ]
 
 ```
+
+用lmdeploy部署internlm2-chat-7b，并作为服务端启动
+```
+lmdeploy serve api_server /root/code/opencompass/model/workspace --server-name 0.0.0.0 --server-port 23333 --max-batch-size 64 --tp 1
+```
+
+
+开始评测
+```
+cd /root/code/opencompass
+python run.py configs/eval_internlm2_chat_turbomind_api.py
+```
+
+![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/00a0c0ac-5ce8-42a2-a3d3-e9520159de44)
