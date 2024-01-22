@@ -159,3 +159,136 @@ python run.py configs/eval_internlm2_chat_turbomind_api.py
 ```
 
 ![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/00a0c0ac-5ce8-42a2-a3d3-e9520159de44)
+
+评测完成
+![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/7641332f-cca2-429f-a3b5-b8226b78c607)
+
+评测结果
+```
+tabulate format
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dataset                                 version    metric         mode    internlm2-chat-7b-turbomind
+--------------------------------------  ---------  -------------  ------  -----------------------------
+--------- 考试 Exam ---------           -          -              -       -
+ceval                                   -          naive_average  gen     59.42
+agieval                                 -          -              -       -
+mmlu                                    -          -              -       -
+GaokaoBench                             -          -              -       -
+ARC-c                                   -          -              -       -
+--------- 语言 Language ---------       -          -              -       -
+WiC                                     -          -              -       -
+summedits                               -          -              -       -
+chid-dev                                -          -              -       -
+afqmc-dev                               -          -              -       -
+bustm-dev                               -          -              -       -
+cluewsc-dev                             -          -              -       -
+WSC                                     -          -              -       -
+winogrande                              -          -              -       -
+flores_100                              -          -              -       -
+--------- 知识 Knowledge ---------      -          -              -       -
+BoolQ                                   -          -              -       -
+commonsense_qa                          -          -              -       -
+nq                                      -          -              -       -
+triviaqa                                -          -              -       -
+--------- 推理 Reasoning ---------      -          -              -       -
+cmnli                                   -          -              -       -
+ocnli                                   -          -              -       -
+ocnli_fc-dev                            -          -              -       -
+AX_b                                    -          -              -       -
+AX_g                                    -          -              -       -
+CB                                      -          -              -       -
+RTE                                     -          -              -       -
+story_cloze                             -          -              -       -
+COPA                                    -          -              -       -
+ReCoRD                                  -          -              -       -
+hellaswag                               -          -              -       -
+piqa                                    -          -              -       -
+siqa                                    -          -              -       -
+strategyqa                              -          -              -       -
+math                                    -          -              -       -
+gsm8k                                   -          -              -       -
+TheoremQA                               -          -              -       -
+openai_humaneval                        -          -              -       -
+mbpp                                    -          -              -       -
+bbh                                     -          -              -       -
+--------- 理解 Understanding ---------  -          -              -       -
+C3                                      -          -              -       -
+CMRC_dev                                -          -              -       -
+DRCD_dev                                -          -              -       -
+MultiRC                                 -          -              -       -
+race-middle                             -          -              -       -
+race-high                               -          -              -       -
+openbookqa_fact                         -          -              -       -
+csl_dev                                 -          -              -       -
+lcsts                                   -          -              -       -
+Xsum                                    -          -              -       -
+eprstmt-dev                             -          -              -       -
+lambada                                 -          -              -       -
+tnews-dev                               -          -              -       -
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+```
+```
+raw format
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------
+Model: internlm2-chat-7b-turbomind
+ceval-computer_network: {'accuracy': 57.89473684210527}
+ceval-operating_system: {'accuracy': 57.89473684210527}
+ceval-computer_architecture: {'accuracy': 57.14285714285714}
+ceval-college_programming: {'accuracy': 62.16216216216216}
+ceval-college_physics: {'accuracy': 47.368421052631575}
+ceval-college_chemistry: {'accuracy': 33.33333333333333}
+ceval-advanced_mathematics: {'accuracy': 26.31578947368421}
+ceval-probability_and_statistics: {'accuracy': 44.44444444444444}
+ceval-discrete_mathematics: {'accuracy': 31.25}
+ceval-electrical_engineer: {'accuracy': 43.24324324324324}
+ceval-metrology_engineer: {'accuracy': 58.333333333333336}
+ceval-high_school_mathematics: {'accuracy': 27.77777777777778}
+ceval-high_school_physics: {'accuracy': 42.10526315789473}
+ceval-high_school_chemistry: {'accuracy': 42.10526315789473}
+ceval-high_school_biology: {'accuracy': 36.84210526315789}
+ceval-middle_school_mathematics: {'accuracy': 47.368421052631575}
+ceval-middle_school_biology: {'accuracy': 80.95238095238095}
+ceval-middle_school_physics: {'accuracy': 63.1578947368421}
+ceval-middle_school_chemistry: {'accuracy': 95.0}
+ceval-veterinary_medicine: {'accuracy': 47.82608695652174}
+ceval-college_economics: {'accuracy': 50.90909090909091}
+ceval-business_administration: {'accuracy': 54.54545454545454}
+ceval-marxism: {'accuracy': 84.21052631578947}
+ceval-mao_zedong_thought: {'accuracy': 70.83333333333334}
+ceval-education_science: {'accuracy': 79.3103448275862}
+ceval-teacher_qualification: {'accuracy': 77.27272727272727}
+ceval-high_school_politics: {'accuracy': 89.47368421052632}
+ceval-high_school_geography: {'accuracy': 68.42105263157895}
+ceval-middle_school_politics: {'accuracy': 76.19047619047619}
+ceval-middle_school_geography: {'accuracy': 66.66666666666666}
+ceval-modern_chinese_history: {'accuracy': 73.91304347826086}
+ceval-ideological_and_moral_cultivation: {'accuracy': 84.21052631578947}
+ceval-logic: {'accuracy': 50.0}
+ceval-law: {'accuracy': 41.66666666666667}
+ceval-chinese_language_and_literature: {'accuracy': 69.56521739130434}
+ceval-art_studies: {'accuracy': 72.72727272727273}
+ceval-professional_tour_guide: {'accuracy': 79.3103448275862}
+ceval-legal_professional: {'accuracy': 47.82608695652174}
+ceval-high_school_chinese: {'accuracy': 52.63157894736842}
+ceval-high_school_history: {'accuracy': 75.0}
+ceval-middle_school_history: {'accuracy': 81.81818181818183}
+ceval-civil_servant: {'accuracy': 65.95744680851064}
+ceval-sports_science: {'accuracy': 68.42105263157895}
+ceval-plant_protection: {'accuracy': 77.27272727272727}
+ceval-basic_medicine: {'accuracy': 63.1578947368421}
+ceval-clinical_medicine: {'accuracy': 50.0}
+ceval-urban_and_rural_planner: {'accuracy': 63.04347826086957}
+ceval-accountant: {'accuracy': 46.93877551020408}
+ceval-fire_engineer: {'accuracy': 54.83870967741935}
+ceval-environmental_impact_assessment_engineer: {'accuracy': 45.16129032258064}
+ceval-tax_accountant: {'accuracy': 48.97959183673469}
+ceval-physician: {'accuracy': 57.14285714285714}
+ceval-stem: {'naive_average': 50.12591254625007}
+ceval-social-science: {'naive_average': 71.78333569032297}
+ceval-humanities: {'naive_average': 66.24262901172294}
+ceval-other: {'naive_average': 58.2648931091204}
+ceval-hard: {'naive_average': 36.8375365497076}
+ceval: {'naive_average': 59.42181444533667}
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+```
