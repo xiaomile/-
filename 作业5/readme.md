@@ -109,6 +109,7 @@ lmdeploy convert internlm2-chat-7b ./model/internlm2-chat-7b --dst-path ./model/
 编写评测demo
 在configs目录下新建eval_internlm2-chat-7b-turbomind.py
 ```python
+### eval_internlm2-chat-7b-turbomind.py
 from mmengine.config import read_base
 from opencompass.models.turbomind import TurboMindModel
 
