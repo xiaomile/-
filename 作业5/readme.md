@@ -5,7 +5,7 @@
 使用huggingface-cli下载模型时报错
 ![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/e86acbdc-c293-47ac-a2b8-5152ec146813)
 
-改用huggingface_hub的python包来下载
+改用huggingface_hub的snapshot_download就能正常下载
 ```python
 import os
 
@@ -16,6 +16,8 @@ os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
 from huggingface_hub import snapshot_download
 snapshot_download(repo_id="internlm/internlm2-chat-7b", local_dir="./model/internlm2-chat-7b")
 ```
+![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/fb988667-d6ee-4df1-9606-b2884de105ed)
+
 
 进阶作业
 
