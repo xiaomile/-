@@ -24,6 +24,9 @@ snapshot_download(repo_id="internlm/internlm2-chat-7b", local_dir="./model/inter
 ```bash
 python run.py --datasets ceval_gen --hf-path ./model/internlm2-chat-7b/ --tokenizer-path ./model/internlm2-chat-7b/ --tokenizer-kwargs padding_side='left' truncation='left' trust_remote_code=True --model-kwargs trust_remote_code=True device_map='auto' --max-seq-len 2048 --max-out-len 16 --batch-size 4 --num-gpus 1 --debug
 ```
+第一次评测爆了显存，升一下配置再来
+![image](https://github.com/xiaomile/InternLM-homework/assets/14927720/3f765781-1909-4168-9324-2532513df303)
+
 
 
 进阶作业
