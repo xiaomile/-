@@ -20,6 +20,10 @@ snapshot_download(repo_id="internlm/internlm2-chat-7b", local_dir="./model/inter
 
 数据集和opencompass的安装按照教程上来做即可
 
+启动评测
+```bash
+python run.py --datasets ceval_gen --hf-path ./model/internlm2-chat-7b/ --tokenizer-path ./model/internlm2-chat-7b/ --tokenizer-kwargs padding_side='left' truncation='left' trust_remote_code=True --model-kwargs trust_remote_code=True device_map='auto' --max-seq-len 2048 --max-out-len 16 --batch-size 4 --num-gpus 1 --debug
+```
 
 
 进阶作业
