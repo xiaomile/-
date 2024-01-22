@@ -96,3 +96,49 @@ ceval                                           -          naive_average  gen   
 
 使用 OpenCompass 评测 InternLM2-Chat-7B 模型使用 LMDeploy 0.2.0 部署后在 C-Eval 数据集上的性能
 
+安装lmdeploy 0.2.0
+```
+pip install lmdeploy==0.2.0
+```
+
+转化模型为turbomind格式
+```
+lmdeploy convert internlm2-chat-7b ./model/internlm2-chat-7b --dst-path ./model/internlm2-chat-7b-turbomind
+```
+
+编写评测demo
+在configs目录下新建eval_internlm2-chat-7b-turbomind.py
+```python
+from mmengine.config import read_base
+from opencompass.models.turbomind import TurboMindModel
+
+with read_base():
+    # choose a list of datasets
+    from .datasets.ceval.ceval_gen_5f30c7 import ceval_datasets
+    # and output the results in a choosen format
+    from .summarizers.medium import summarizer
+
+datasets = [*ceval_datasets]
+
+
+meta_template = dict(
+    round=[
+        dict(role='HUMAN', begin='<|User|>:', end='\n'),
+        dict(role='BOT', begin='<|Bot|>:', end='<eoa>\n', generate=True),
+    ],
+    eos_token_id=103028)
+
+models = [
+    dict(
+        type=TurboMindModel,
+        abbr='internlm2-chat-7b-turbomind',
+        path="./model/internlm2-chat-7b-turbomind",
+        max_out_len=100,
+        max_seq_len=2048,
+        batch_size=16,
+        meta_template=meta_template,
+        run_cfg=dict(num_gpus=1, num_procs=1),
+    )
+]
+
+```
